@@ -3,20 +3,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head><meta name="generator" content="Hexo 3.9.0">
-    <title>Generate — design-first</title>
+    <title>TODO's — design-first</title>
     <meta charset="utf-8">
     <meta name="description" content="design-first - A tool for building better http REST api's, faster">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="alternate" hreflang="x-default" href="https://adam-hanna.github.io/design-first-docs/v0/guide/command-line-gen.html">
+    <link rel="alternate" hreflang="x-default" href="https://adam-hanna.github.io/design-first-docs/v0/guide/examples.html">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Generate — design-first">
+    <meta property="og:title" content="TODO's — design-first">
     <meta property="og:description" content="design-first - A tool for building better http REST api's, faster">
     <meta property="og:image" content="https://adam-hanna.github.io//design-first-docs/images/logo.png">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Generate — design-first">
+    <meta name="twitter:title" content="TODO's — design-first">
     <meta name="twitter:description" content="design-first - A tool for building better http REST api's, faster">
     <meta name="twitter:image" content="https://adam-hanna.github.io/images/logo.png">
 
@@ -250,7 +250,7 @@
       
     
     <li>
-      <a href="/design-first-docs/v0/guide/command-line-gen.html" class="sidebar-link current">Generate</a>
+      <a href="/design-first-docs/v0/guide/command-line-gen.html" class="sidebar-link">Generate</a>
     </li>
   
     
@@ -440,7 +440,7 @@
       
     
     <li>
-      <a href="/design-first-docs/v0/guide/examples.html" class="sidebar-link">TODO's</a>
+      <a href="/design-first-docs/v0/guide/examples.html" class="sidebar-link current">TODO's</a>
     </li>
   
     
@@ -468,7 +468,7 @@
 </div>
 
 
-<div class="content guide with-sidebar command-line-gen-guide">
+<div class="content guide with-sidebar examples-guide">
   
     
       <!--
@@ -485,32 +485,27 @@
     
   
   
-    <h1>Generate</h1>
+    <h1>TODO's</h1>
   
   
-    <p>After modifying the <code>design.json</code> file, you should run the <code>generate</code> command. The <code>generate</code> command will take the services and actions specified and generate the necessary scaffolding.</p>
-<p>The command overwrites the <code>internal</code> directory, so files in that directory should never be modified. All other files in all other directories will NEVER be overwritten so you can safely call the <code>generate</code> command multiple times without fear of losing your work. If the command encounters a file that it cannot overwrite, it will output a warning to the console that writing that file was skipped.</p>
-<p>This skipping behavior of the <code>generate</code> command means that if you make any changes to your <code>design.json</code> file to an existing action, those changes will not be implemented (outside of any changes that would be implemented in the <code>internal</code> directory, because those files are overwritten). Therefore, you should first change the filenames of any files that need updating, e.g. <code>$ mv ./authenticate/service/action/index.ts ./authenticate/service/action/index.ts.bak</code>.</p>
-<p>The <code>generate</code> command takes an optional design file location input but defaults to <code>./design.json</code>.</p>
-<p>Shorthand aliases <code>gen</code> and <code>g</code> are also available.</p>
-<pre><code class="hljs bash">$ design-first g my-design-file.json</code></pre>
+    <p>A TODO’s example, backed by postgres, with passport.js for authentication backed by a redis cache can be found, <a href="https://github.com/adam-hanna/design-first-example" target="_blank" rel="noopener">here</a>.</p>
 
   
   
     <div class="guide-links">
       
       
-        <span>← <a href="/design-first-docs/v0/guide/command-line-init.html">Initialize</a></span>
+        <span>← <a href="/design-first-docs/v0/guide/concerns.html">Concerns</a></span>
       
       
       
-        <span style="float: right;"><a href="/design-first-docs/v0/guide/directory-structure.html">Tree</a> →</span>
+        <span style="float: right;"><a href="/design-first-docs/v0/guide/team.html">Meet the Team</a> →</span>
       
     </div>
   
   <div class="footer">
     Caught a mistake or want to contribute to the documentation?
-    <a href="https://github.com/adam-hanna/design-first-docs/blob/master/src/v0/guide/command-line-gen.md" target="_blank">
+    <a href="https://github.com/adam-hanna/design-first-docs/blob/master/src/v0/guide/examples.md" target="_blank">
       Edit this page on GitHub!
     </a>
   </div>

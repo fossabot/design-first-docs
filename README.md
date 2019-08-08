@@ -1,4 +1,6 @@
 # design-first-docs
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fadam-hanna%2Fdesign-first-docs.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fadam-hanna%2Fdesign-first-docs?ref=badge_shield)
+
 
 This is the documentation for [design-first](https://github.com/adam-hanna/design-first), the http REST api scaffolding tool for Typescript.
 
@@ -22,3 +24,7 @@ $ npm run deploy
 ## Deployed
 
 The deployed files are hosted on [github](https://adam-hanna.github.io/design-first-docs).
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fadam-hanna%2Fdesign-first-docs.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fadam-hanna%2Fdesign-first-docs?ref=badge_large)

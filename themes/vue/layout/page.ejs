@@ -21,9 +21,7 @@
   <% if (page.title.trim()) { %>
     <h1><%- page.title %><%- page.type === 'examples' ? ' Example' : '' %></h1>
   <% } %>
-  <% if (page.sponsors) { %>
-    <%- partial('sponsors-page') %>
-  <% } else if (page.search) { %>
+  <% if (page.search) { %>
     <%- partial('search-page') %>
   <% } else { %>
     <%- page.content %>
@@ -41,11 +39,8 @@
     </div>
   <% } %>
   <div class="footer">
-    <%_ if (!page.sponsors) { _%>
-      <%- partial('partials/ad-text') %>
-    <%_ } _%>
     Caught a mistake or want to contribute to the documentation?
-    <a href="https://github.com/vuejs/vuejs.org/blob/master/src/<%- page.path.replace(/\.html$/, '.md') %>" target="_blank">
+    <a href="https://github.com/adam-hanna/design-first-docs/blob/master/src/<%- page.path.replace(/\.html$/, '.md') %>" target="_blank">
       Edit this page on GitHub!
     </a>
   </div>

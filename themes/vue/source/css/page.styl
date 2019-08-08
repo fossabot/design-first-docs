@@ -22,10 +22,15 @@
 
 .content
   position: relative
-  padding: 2.2em 0
-  max-width: 700px
-  margin: 0 auto
+  @media screen and (max-width: 560px)
+    max-width: 100vw
+    margin: 0 auto
+  @media screen and (min-width: 561px)
+    max-width: calc(100vw - 300px)
+    margin-left: 300px
+  padding-top: 2.2em
   padding-left: 50px
+  padding-right: 50px
   &.api
     > a:first-of-type > h2
       margin-top: 0
@@ -193,12 +198,16 @@
     position: fixed
 
 @media screen and (min-width: 1590px)
+  .content
+    padding-left: 225px
+    padding-right: 225px
   #header
     background-color: #fff
 
 @media screen and (max-width: 1300px)
-  .content.with-sidebar
-    margin-left: 290px
+  .content
+    padding-left: 125px
+    padding-right: 125px
   #ad
     z-index: 1
     position: relative
@@ -227,9 +236,9 @@
   .highlight pre
     padding: 1.2em 1em
   .content
-    padding-left: 0
+    padding-left: 100px
+    padding-right: 100px
     &.with-sidebar
-      margin: auto
     h2, h3
       &:before
         content: ""
@@ -242,6 +251,9 @@
     text-align: center
 
 @media screen and (max-width: 560px)
+  .content
+    padding-left: 25px
+    padding-right: 25px
   #downloads
     text-align: center
     margin-bottom: 25px

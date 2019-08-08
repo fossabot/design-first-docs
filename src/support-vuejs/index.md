@@ -1,3 +1,3 @@
 ---
-sponsors: true
+sponsors: false
 ---
